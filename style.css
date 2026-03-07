@@ -290,7 +290,6 @@ main{
 }
 
 .marquee-div {
-    background-color: #8d8d8db2;
     height: 10vh;
     width: 100%;
     overflow: hidden;
@@ -1442,3 +1441,4 @@ main{
     height: 26px;
     width: 26px;
 }
+
