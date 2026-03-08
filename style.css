@@ -22,44 +22,49 @@ html, body {
     src: url(Roboto-VariableFont_wdth\,wght.ttf);
 }
 nav{
-    height: 10vh;
+    height: 13vh;
     width: 100%;
     position: fixed;
     display: flex;
     align-items: center;
-    padding: 0px 150px;
+    padding: 0px 85px;
     z-index: 1;
     border-bottom: 0.2px solid #b6b6b6;
     transition: 0.5s all ease;
 }
 nav p{
-    font-family: magnetlight;
+    font-family: robotoregular;
 }
 .logo{
     display: flex;
     align-items: center;
-    gap: 10px;
-    width: 20%;
-
+    gap: 5px;
+    width: 19%;
     height: 100%;
-
-    line-height: 15px;
+    line-height: 18px;
 }
+
+.logo p {
+    font-size: 17px;
+    font-weight: 300;
+}
+
 .logo p span{
-    font-weight: 800 !important;
-    font-family: magnetregular;
+    font-size: 19px;
+    font-weight: 400 !important;
 }
 .nav-links{
     height: 100%;
-    width: 50%;
+    width: 60%;
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
 }
 .nav-links p{
-    font-size: 13px;
+    font-size: 14px;
     color: #000;
-    font-weight: 600;
+    font-weight: 300;
+    letter-spacing: -2%;
 }
 
 nav:hover {
@@ -81,9 +86,10 @@ nav:hover {
     margin-right: 15px;
 }
 .credit-text h4{
-    font-family: magnetlight;
-    font-size: 13px;
+    font-family: robotoregular;
+    font-size: 14px;
     color: #717767;
+    font-weight: 300;
 }
 .credit-svg{
     border: 1px solid transparent;
@@ -91,7 +97,7 @@ nav:hover {
 .cart-svg,.profile-svg{
     border: 1px solid #403F3D;
     border-radius: 4px;
-    padding: 2px;
+    padding: 4px;
     font-size: 28px;
 }
 main{
@@ -115,26 +121,25 @@ main{
     background-color: #00000000;
     position: absolute;
     top: 0;
-    padding-top: 150px;
-    padding-left: 150px;
+    padding-top: 120px;
+    padding-left: 85px;
 }
 .overlay h1{
-    width: 50%;
-    font-size: 65px;
-    font-family: magnetlight;
-    margin-bottom: 90px;
-    font-weight: 500;
+    width: 55%;
+    font-size: 70px;
+    font-family: robotoregular;
+    font-weight: 300;
 }
 .card-container{
    display: flex;
-   gap: 20px;
+   gap: 15px;
    width: 100%;
 }
 .card{
-    height: 280px;
-    width: 280px;
+    height: 270px;
+    width: 270px;
     background-color: rgba(255, 255, 255, 0.389);
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -144,7 +149,8 @@ main{
 }
 .text-container p{
     font-size: 26px;
-    font-family: magnetlight;
+    font-weight: 300;
+    font-family: robotoregular;
     transition: all ease 0.3s;
 
 }
@@ -169,7 +175,7 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 2px;
+    gap: 5px;
     bottom: 40%;
     z-index: 9999;
     padding-left: 10%;
@@ -273,7 +279,6 @@ main{
     height: 100vh;
     width: 50%;
     object-position: center;
-    /* scale: 0.5; */
     object-fit: cover;
 }
 
@@ -286,7 +291,7 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
 }
 
 .marquee-div {
@@ -301,10 +306,11 @@ main{
     height: 10vh;
     width: max-content;
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 20px;
-    animation: marquee 12s linear infinite;
-    flex-shrink: 0;
+    gap: 30px;
+    animation: marquee 14s linear infinite;
+    animation-direction: reverse;
 }
 
 .marquee-container {
@@ -317,7 +323,7 @@ main{
 
 .marquee-container h1 {
     font-family: magnetlight;
-    font-size: 40px;
+    font-size: 45px;
 }
 
 @keyframes marquee {
@@ -329,28 +335,39 @@ main{
     }
 }
 
-.set {
-    height: 70vh;
-    width: 100%;
+.marquee-track-bottom {
+    height: 10vh;
+    width: max-content;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 30px;
+    animation: marquee 14s linear infinite;
+}
+
+.set {
+    height: 85vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     flex-direction: column;
     font-family: robotoregular;
+    padding-bottom: 20vh;
 }
 
 .set p {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: 300;
-    line-height: 40px;
+    line-height: 30px;
 }
 
 .set-button{
-    height: 33px;
-    width: 115px;
-    margin-top: 35px;
-    font-size: 13px;
-    border-radius: 5px;
+    height: 29px;
+    width: 95px;
+    margin-top: 30px;
+    font-size: 11px;
+    border-radius: 3px;
     border: none;
     position: relative;
     overflow: hidden;
@@ -385,17 +402,6 @@ main{
     top: 0;
 }
 
-.marquee-track-bottom {
-    height: 10vh;
-    width: max-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    animation: marquee 12s linear infinite;
-    animation-direction: reverse;
-}
-
 .image-container {
     height: 100vh;
     width: 100%;
@@ -428,11 +434,11 @@ main{
 }
 
 .pargaraph-container .para p{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 300;
     position: absolute;
     width: 100%;
-    height: 3vh;
+    height: 4vh;
     left: 0;
     bottom: -100%;
     transition: all ease 0.7s;
@@ -440,7 +446,7 @@ main{
 }
 
 .pargaraph-container .para h1{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 300;
     position: absolute;
     width: 100%;
@@ -464,8 +470,8 @@ main{
 }
 
 .cards:hover {
-    height: 50%;
-    width: 25%;
+    height: 60%;
+    width: 28%;
 }
 
 .card1:hover +.image1{
@@ -497,20 +503,19 @@ main{
     width: 2%;
     background-color: black;
     position: absolute;
-    left: 25px;
-    bottom: 25%;
+    left: 20px;
+    bottom: 18%;
     transition: all ease 0.7s;
     opacity: 0;
 }
 
 .cards:hover::after {
-    width: 400px;
+    width: 338px;
     opacity: 1;
 }
 
 .cards:hover .pargaraph-container .para p{
     bottom: 0;
-    padding-top: 5px;
 }
 .cards:hover .pargaraph-container .para p{
     opacity: 1;
@@ -537,21 +542,20 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 2px;
-    bottom: 40%;
+    bottom: 45%;
     z-index: 9999;
-    padding-left: 25px;
+    padding-left: 20px;
 }
 .pargaraph-container .para {
     width: 100%;
-    height: 3vh;
+    height: 4vh;
     position: relative;
     overflow: hidden;
 }
 
 .pargaraph-container .parah1 {
     height: 6vh;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .pargaraph-container .paraend {
@@ -559,8 +563,8 @@ main{
     height: 3vh;
     position: relative;
     overflow: hidden;
-    margin-top: 30%;
-    margin-bottom: -30%;
+    margin-top: 31%;
+    margin-bottom: -40%;
     display: flex;
 }
 
@@ -599,13 +603,14 @@ main{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 18%;
+    padding-left: 11%;
     border-bottom: 0.5px solid rgb(165, 165, 165);
 }
 
 .about-left-top h1 {
-    font-size: 57px;
+    font-size: 55px;
     font-weight: 300;
+    letter-spacing: -3%;
 }
 
 .about-left-mid {
@@ -615,17 +620,17 @@ main{
     justify-content: flex-start;
     align-items: center;
     gap: 15px;
-    padding-left: 18%;
+    padding-left: 11%;
     border-bottom: 0.5px solid rgb(165, 165, 165);
 }
 
 .about .about-left i {
-    font-size: 13px;
-    margin-bottom: 2px;
+    font-size: 11px;
+    margin-bottom: -1px;
 }
 
 .about .about-left p {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 300;
 }
 
@@ -637,7 +642,7 @@ main{
     justify-content: flex-start;
     align-items: center;
     gap: 15px;
-    padding-left: 18%;
+    padding-left: 11%;
 }
 
 .about-right {
@@ -654,22 +659,22 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 30px;
+    gap: 20px;
     border-bottom: 0.5px solid rgb(165, 165, 165);
 }
 
 .about-right-top p {
-    font-size: 19px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 25px;
     font-weight: 300;
     letter-spacing: -3%;
 }
 
 .about-button {
-    height: 32px;
-    width: 90px;
-    font-size: 14px;
-    border-radius: 5px;
+    height: 29px;
+    width: 70px;
+    font-size: 12px;
+    border-radius: 3px;
     border: none;
     position: relative;
     overflow: hidden;
@@ -690,8 +695,8 @@ main{
 }
 
 .about-right-mid p {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 25px;
     font-weight: 300;
     letter-spacing: -3%;
 }
@@ -706,15 +711,15 @@ main{
 }
 
 .about-right-bottom p {
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 25px;
     font-weight: 300;
     letter-spacing: -3%;
 }
 
 .products {
     background-color: #FFFDF5;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -725,7 +730,7 @@ main{
 
 .products-top {
     height: 28vh;
-    width: 79%;
+    width: 87%;
     display: flex;
 }
 
@@ -752,11 +757,11 @@ main{
 }
 
 .shop-button{
-    height: 35px;
-    width: 90px;
-    font-size: 14px;
-    border-radius: 5px;
+    height: 30px;
+    width: 80px;
+    font-size: 11px;
     border: none;
+    border-radius: 3px;
     position: relative;
     overflow: hidden;
     margin-bottom: 5px;
@@ -793,8 +798,8 @@ main{
 }
 
 .products-bottom {
-    height: 62vh;
-    width: 79%;
+    height: 70vh;
+    width: 87%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -802,7 +807,7 @@ main{
 }
 
 .products-bottom .products-card {
-    height: 50vh;
+    height: 57vh;
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -926,13 +931,13 @@ main{
 
 .custom-solution {
     background-color: #12271D;
-    height: 80vh;
+    height: 90vh;
     width: 100%;
     font-family: robotoregular;
 }
 
 .custom-solution-top {
-    height: 48vh;
+    height: 56vh;
     width: 100%;
     display: flex;
 }
@@ -944,22 +949,22 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 11%;
+    padding-left: 6.5%;
     gap: 20px;
     color: #FEFEFE;
 }
 
 .custom-solution-top-left p {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 300;
     letter-spacing: -4%;
 }
 
 .custom-solution-top-left h1 {
-    font-size: 65px;
+    font-size: 58px;
     font-weight: 300;
     letter-spacing: -3%;
-    line-height: 70px;
+    line-height: 60px;
 }
 
 .custom-solution-top-right {
@@ -976,12 +981,12 @@ main{
 }
 
 .custom-solution-bottom {
-    height: 32vh;
+    height: 34vh;
     width: 100%;
 }
 
 .custom-marquee-div {
-    height: 22vh;
+    height: 24vh;
     width: 100%;
     overflow: hidden;
     display: flex;
@@ -1012,7 +1017,7 @@ main{
 
 .custom-marquee-container h1 {
     font-family: robotoregular;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 300;
     color: #FEFEFE;
 }
@@ -1034,7 +1039,7 @@ main{
 
 .standards {
     background-color: #FFFDF5;
-    height: 122vh;
+    height: 128vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1044,13 +1049,13 @@ main{
 
 .standards-left {
     height: 100%;
-    width: 39%;
+    width: 43.5%;
     padding-right: 30px;
 }
 
 .standards-right {
     height: 100%;
-    width: 39%;
+    width: 43.5%;
     padding-left: 50px;
 }
 
@@ -1062,19 +1067,19 @@ main{
 }
 
 .standards-top h1 {
-    font-size: 43px;
+    font-size: 38px;
     font-weight: 300;
     letter-spacing: -3%;
 }
 
 .standards-top p {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 400;
     line-height: 25px;
 }
 
 .standards-block {
-    height: 11vh;
+    height: 12vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1095,7 +1100,7 @@ main{
 
 .questions {
     background-color: #F7F4E9;
-    height: 62vh;
+    height: 68vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -1105,7 +1110,7 @@ main{
 
 .questions-left {
     height: 100%;
-    width: 40%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1115,21 +1120,21 @@ main{
 }
 
 .questions-left p {
-    font-size: 32px;
+    font-size: 27px;
     font-weight: 300;
     letter-spacing: -3%;
 }
 
 .questions-right {
     height: 100%;
-    width: 38%;
+    width: 42%;
     padding-top: 70px;
 }
 
 .view-button{
-    height: 31px;
-    width: 80px;
-    font-size: 13px;
+    height: 27px;
+    width: 68px;
+    font-size: 11px;
     border-radius: 3px;
     border: none;
     position: relative;
@@ -1166,7 +1171,7 @@ main{
 }
 
 .questions-block {
-    height: 9vh;
+    height: 10vh;
     width: 100%;
     display: flex;
     border-top: 0.2px solid #9e9e9e;
@@ -1181,7 +1186,7 @@ main{
 }
 
 .questions-block-left p {
-    font-size: 23px;
+    font-size: 21px;
     font-weight: 300;
     color: black;
     letter-spacing: -2%;
@@ -1202,7 +1207,7 @@ main{
 }
 
 .questions-block:hover .questions-block-left p {
-    padding-left: 10px;
+    padding-left: 8px;
 }
 
 .questions-block:hover .questions-block-right p {
@@ -1216,13 +1221,13 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 11%;
+    padding-left: 6.5%;
     font-family: robotoregular;
 }
 
 .footer-top {
-    height: 20vh;
-    width: 89%;
+    height: 25vh;
+    width: 93%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1237,15 +1242,15 @@ main{
 }
 
 .footer-top-left h1 {
-    font-size: 53px;
+    font-size: 48px;
     font-weight: 300;
     letter-spacing: -2%;
     color: #12271D;
 }
 
 .footer-top-right {
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -1259,7 +1264,7 @@ main{
 .footer-top-right svg {
     position: absolute;
     transform: rotate(-90deg);
-    padding: 19px 19px 19px 19px;
+    padding: 17px 17px 17px 17px;
     border-radius: 10px;
     color: #12271D;
     transition: 0.5s all ease;
@@ -1290,8 +1295,8 @@ main{
 }
 
 .footer-bottom {
-    height: 80vh;
-    width: 89%;
+    height: 75vh;
+    width: 93%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -1301,7 +1306,7 @@ main{
 }
 
 .footer-bottom-top {
-    height: 41vh;
+    height: 45vh;
     width: 100%;
     display: flex;
     justify-content: flex-end;
@@ -1311,11 +1316,11 @@ main{
 
 .footer-box {
     height: 100%;
-    width: 41vh;
+    width: 45vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
+    border-radius: 15px;
     border: 1px solid #12271D;
     position: relative;
     overflow: hidden;
@@ -1338,7 +1343,7 @@ main{
 }
 
 .footer-box-front p {
-    font-size: 31px;
+    font-size: 28px;
     font-weight: 300;
     color: #12271D;
     letter-spacing: -3%;
@@ -1360,8 +1365,8 @@ main{
 }
 
 .footer-box img {
-    height: 41vh;
-    width: 41vh;
+    height: 45vh;
+    width: 45vh;
     object-fit: cover;
     border-radius: 20px;
     position: absolute;
@@ -1390,7 +1395,7 @@ main{
 }
 
 .footer-bottom-bottom {
-    height: 8vh;
+    height: 9vh;
     width: 100%;
     display: flex;
     border-radius: 10px;
@@ -1403,7 +1408,7 @@ main{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 25px;
+    gap: 20px;
     padding-left: 20px;
 }
 
@@ -1412,7 +1417,7 @@ main{
 }
 
 .footer-bot-bot-left p {
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 300;
     letter-spacing: -3%;
 }
@@ -1428,7 +1433,7 @@ main{
 }
 
 .footer-bot-bot-right p {
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 300;
     letter-spacing: -2%;
 }
@@ -1441,4 +1446,3 @@ main{
     height: 26px;
     width: 26px;
 }
-
