@@ -118,35 +118,45 @@ main{
 .overlay{
     height: 100%;
     width: 100%;
-    background-color: #00000000;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     top: 0;
-    padding-top: 120px;
+    padding-top: 110px;
     padding-left: 85px;
+    gap: 30px;
 }
-.overlay h1{
+.txt h1{
     width: 55%;
-    font-size: 70px;
+    font-size: 60px;
     font-family: robotoregular;
     font-weight: 300;
+}
+
+.txt {
+    height: 40%;
+    width: 100%;
 }
 .card-container{
    display: flex;
    gap: 15px;
    width: 100%;
+   align-items: flex-start;
+   height: 270px;
 }
 .card{
     height: 270px;
     width: 270px;
-    background-color: rgba(255, 255, 255, 0.389);
+    background-color: #ffffff3f;
+    backdrop-filter: blur(30px);
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(10px);
     transition: all ease 0.3s;
     position: relative;
 }
+
 .text-container p{
     font-size: 26px;
     font-weight: 300;
@@ -168,7 +178,7 @@ main{
 .card:hover p{
     margin-top: -20%;
 }
-.pragaraph-container{
+.hero-paragaraph-container{
     width: 100%;
     position: absolute;
     display: flex;
@@ -180,14 +190,14 @@ main{
     z-index: 9999;
     padding-left: 10%;
 }
-.pragaraph-container .para {
+.hero-paragaraph-container .para {
     width: 100%;
     height: 2vh;
     position: relative;
     overflow: hidden;
 }
 
-.pragaraph-container .paraend {
+.hero-paragaraph-container .paraend {
     width: 100%;
     height: 2vh;
     position: relative;
@@ -228,7 +238,7 @@ main{
     opacity: 1;
 }
 
-.pragaraph-container .para h4{
+.hero-paragaraph-container .para h4{
     font-size: 10px;
     width: 100%;
     position: absolute;
@@ -240,7 +250,7 @@ main{
     opacity: 0;
 }
 
-.pragaraph-container .paraend h4{
+.hero-paragaraph-container .paraend h4{
     font-size: 10px;
     position: absolute;
     width: 100%;
@@ -252,40 +262,39 @@ main{
     opacity: 1;
 }
 
-.card:hover .pragaraph-container .para h4{
+.card:hover .hero-paragaraph-container .para h4{
     bottom: 0;
 }
-.card:hover .pragaraph-container .para h4{
+.card:hover .hero-paragaraph-container .para h4{
     opacity: 1;
 }
 
-.card:hover .pragaraph-container .paraend h4{
+.card:hover .hero-paragaraph-container .paraend h4{
     bottom: 0;
 }
-.card:hover .pragaraph-container .paraend h4{
+.card:hover .hero-paragaraph-container .paraend h4{
     opacity: 1;
 }
 
 .marquee {
-    background-color: #DFDAC6;
+    position: relative;
     height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #DFDAC6;
 }
 
 .marquee img {
-    height: 100vh;
+    height: 100%;
     width: 50%;
-    object-position: center;
     object-fit: cover;
 }
 
 .marquee-overlay {
     position: absolute;
-    background-color: #6b6b6a23;
-    height: 100vh;
+    height: 60vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -354,6 +363,7 @@ main{
     flex-direction: column;
     font-family: robotoregular;
     padding-bottom: 20vh;
+    background-color: #DFDAC6;
 }
 
 .set p {
@@ -423,17 +433,17 @@ main{
 .cards{
     height: 280px;
     width: 280px;
-    background-color: rgba(255, 255, 255, 0.389);
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(10px);
+    background-color: #ffffff3f;
+    backdrop-filter: blur(30px);
     transition: all ease 0.5s;
     z-index: 9999;
 }
 
-.pargaraph-container .para p{
+.paragraph-container .para p{
     font-size: 17px;
     font-weight: 300;
     position: absolute;
@@ -445,7 +455,7 @@ main{
     opacity: 1;
 }
 
-.pargaraph-container .para h1{
+.paragraph-container .para h1{
     font-size: 30px;
     font-weight: 300;
     position: absolute;
@@ -457,7 +467,7 @@ main{
     opacity: 1;
 }
 
-.pargaraph-container .paraend p{
+.paragraph-container .paraend p{
     font-size: 18px;
     font-weight: 400;
     position: absolute;
@@ -514,28 +524,28 @@ main{
     opacity: 1;
 }
 
-.cards:hover .pargaraph-container .para p{
+.cards:hover .paragraph-container .para p{
     bottom: 0;
 }
-.cards:hover .pargaraph-container .para p{
+.cards:hover .paragraph-container .para p{
     opacity: 1;
 }
 
-.cards:hover .pargaraph-container .para h1{
+.cards:hover .paragraph-container .para h1{
     bottom: 0;
 }
-.cards:hover .pargaraph-container .para h1{
+.cards:hover .paragraph-container .para h1{
     opacity: 1;
 }
 
-.cards:hover .pargaraph-container .paraend p{
+.cards:hover .paragraph-container .paraend p{
     bottom: 0;
 }
-.cards:hover .pargaraph-container .paraend p{
+.cards:hover .paragraph-container .paraend p{
     opacity: 1;
 }
 
-.pargaraph-container{
+.paragraph-container{
     width: 100%;
     position: absolute;
     display: flex;
@@ -546,19 +556,19 @@ main{
     z-index: 9999;
     padding-left: 20px;
 }
-.pargaraph-container .para {
+.paragraph-container .para {
     width: 100%;
     height: 4vh;
     position: relative;
     overflow: hidden;
 }
 
-.pargaraph-container .parah1 {
+.paragraph-container .parah1 {
     height: 6vh;
     margin-bottom: 20px;
 }
 
-.pargaraph-container .paraend {
+.paragraph-container .paraend {
     width: 100%;
     height: 3vh;
     position: relative;
