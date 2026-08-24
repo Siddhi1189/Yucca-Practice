@@ -1,0 +1,15 @@
+[33mb989d70[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Update index.html
+[33me9eb2fa[m Update style.css
+[33mc028a5a[m Update index.html
+[33mef5bd6f[m Update style.css
+[33me7b1f01[m Update index.html
+[33m4d4758c[m style: update styling to support 100% Chrome zoom
+[33m6bd8e22[m style: update styling to support 100% Chrome zoom
+[33m29a4553[m style: remove background color from marquee-div section to match original website
+[33m933a275[m Update print statement from 'Hello' to 'Goodbye'
+[33m1c55a85[m Update fmt.Println message from 'Hello' to 'Goodbye'
+[33m27deb44[m Add files via upload
+[33mfa43e5b[m Refactor CSS for layout and styles
+[33m89ce6c9[m Update print statement from 'Hello' to 'Goodbye'
+[33m6c7a9ab[m Add files via upload
+[33m1a2cf8a[m Initial commit
